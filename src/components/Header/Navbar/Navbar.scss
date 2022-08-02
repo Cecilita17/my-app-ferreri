@@ -1,0 +1,50 @@
+.divNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-inline-end: 15px;
+    border-bottom: 1px solid rgba(134, 132, 132, 0.5);
+    height: 100px;
+    nav{
+        background-color: transparent;
+        ul{
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 30px;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: white;
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                    font-family: 'Jost', sans-serif;
+                    .fa-angle-down{
+                        font-size: 10px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .logo{
+        color: white;
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+    .navSocial{
+        .fa-facebook-f, .fa-instagram, .fa-snapchat, .fa-whatsapp, .fa-tiktok, .fa-bag-shopping{
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+        }
+        .ordeneOl{
+            border: 2px solid white;
+            padding-inline: 10px;
+            color: white;
+        }
+    }
+}

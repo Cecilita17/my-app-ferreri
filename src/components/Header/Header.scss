@@ -1,0 +1,50 @@
+@import "../../SCSS/utilities/extends.scss";
+
+header{
+    grid-area: header;
+    height: 750px;
+    width: auto;
+    background:linear-gradient(rgba(0, 0, 0, 0.327),rgba(0, 0, 0, 0.3)), url(../../../public/pizza-2.png);
+    background-size: cover;    
+
+    .divTitle{
+        height: 600px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        p{
+            color: rgb(246, 207, 110);
+            font-size: 1.7rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            position: relative;
+            width: 400px;
+            
+            &:before{
+                @extend %line;
+                left: 0;
+            }
+            &:after{
+                @extend %line;
+                right: 0;                  
+            }
+        }
+        h1{
+            color: white;
+            font-size: 5rem;
+            text-transform: uppercase;
+            text-align: center;
+            width: 450px;
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 800;
+        }
+        h2{
+            color: white;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    }
+}
