@@ -1,6 +1,8 @@
 //rafce
 import React from 'react'
 import "./Navbar.scss"
+import "./CartWidget"
+import CartWidget from './CartWidget';
 
 
 function Navbar() {
@@ -47,11 +49,7 @@ function Navbar() {
         link: "https://www.tiktok.com/",
         icon: "fa-brands fa-tiktok",
       },
-      {
-        
-        link: "#",
-        icon: "fa-solid fa-bag-shopping",
-      },
+      
       {
         class: "ordeneOl",
         link: "#",
@@ -75,13 +73,13 @@ function Navbar() {
       <p className="logo">L.</p>
 
       <nav className="navSocial">
-                <ul>          
+                <ul>
+                  <CartWidget icon='fa-solid fa-bag-shopping'/>
                   {navSocialItem.map((item, index) =>(
                     <li key={index} className={item.class ? item.class : undefined}><a href={item.link} target="blank">{item.name}</a>{item.icon && <i className={item.icon}></i>}</li>
                   ))}
-                  
                 </ul>
-              </nav>
+      </nav>
     </div>
     
     </>
