@@ -1,0 +1,78 @@
+@import "../../SCSS/utilities/extends.scss";
+
+main{
+    grid-area: main;
+    background:linear-gradient(rgba(0, 0, 0, 0.927),rgba(0, 0, 0, 0.8)), url(../../../public/bg3.png);
+    background-attachment: fixed;
+    height: 3800px;
+    width: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    .divRistorante{
+        height: 200px;
+        text-transform: uppercase;
+        text-align: center;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        
+        h2{
+            font-family: 'Jost', sans-serif;
+            color: rgb(246, 207, 110);
+            font-size: 1.6rem;
+            font-weight: 700px;
+            width: 400px;
+            position: relative;
+            margin-top: 0;
+            margin-bottom: 8px;
+
+            &:before{
+                @extend %line;
+                left: 0;
+            }
+            &:after{
+                @extend %line;
+                right: 0;                  
+            }
+        }
+        h3{
+            font-family: 'Cormorant Garamond', serif;
+            color: white;
+            font-size: 4.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 8px;
+            
+            
+            &:last-of-type{
+                font-family: 'Jost', sans-serif;
+                color: rgb(246, 207, 110);
+                font-size: 1rem;
+                align-items: center;
+                position: relative;
+                width: 400px;
+
+                &:before{
+                    @extend %line;
+                    left: 0;
+                }
+                &:after{
+                    @extend %line;
+                    right: 0;                  
+                }
+            }
+            .fa-star{
+                font-size: 20px;
+            }
+            
+        }
+    }
+}

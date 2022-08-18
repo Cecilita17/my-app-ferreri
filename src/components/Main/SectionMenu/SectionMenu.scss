@@ -1,0 +1,43 @@
+@import "../../../SCSS/utilities/extends.scss";
+
+.sectionMenu{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    .divTitle{
+        .aboveMenu{
+            font-size: 20px;
+            text-transform: uppercase;
+            font-family: 'Jost', sans-serif;
+            color: rgb(246, 207, 110);
+            text-align: center;
+            margin-bottom: 5px;
+            position: relative;
+            
+
+            &:before{
+                @extend %line;
+                left: 0;
+            }
+            &:after{
+                @extend %line;
+                right: 0;                  
+            }
+            
+        }
+        
+        .menuTitle{
+            font-size: 66px;
+            text-transform: uppercase;
+            font-family: 'Cormorant Garamond', serif;
+            color: #e6e6e6;
+            font-weight: 600;
+
+        }
+    }
+    
+}
