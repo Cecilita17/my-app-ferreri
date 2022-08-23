@@ -1,7 +1,7 @@
 import React from 'react';
 import './SCSS/App.scss';
 import Header from './components/Header/Header';
-import ItemListContainer from './components/ItemListContainer';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
   return (

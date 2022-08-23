@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Mushrooms",
+        "clase": "pizzaNro",
+        "description": "Tomato sauce, mushrooms, sausage and olives",
+        "priceRegular": "$30",
+        "priceMedium":"$36",
+        "url": "https://drive.google.com/uc?&export=download&id=1T_tzxGckwKQxYzbBW_4-fu3wnu1MUOno"
+    },
+    {
+        "title": "Mozzarella",
+        "clase": "pizzaNro reverse",
+        "description": "Tomato sauce, mozzarella cheese, oregano, basil",
+        "priceRegular": "$31",
+        "priceMedium":"$36",
+        "url": "https://drive.google.com/uc?&export=download&id=1ohKgs0-3rkQ1icN4D9lxQNSphFEJiFwr"
+    },
+    {
+        "title": "Veggie",
+        "clase": "pizzaNro",
+        "description": "Tomato sauce, broccoli, sliced tomato, mushrooms",
+        "priceRegular": "$29",
+        "priceMedium":"$33",
+        "url":"https://drive.google.com/uc?&export=download&id=1e4CobY7cyC7cmVA65B-V88UJYV0XyaF3"
+    },
+    {
+        "title": "Capricciosa",
+        "clase": "pizzaNro reverse",
+        "description": " Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "priceRegular": "$32",
+        "priceMedium":"$38",
+        "url":"https://drive.google.com/uc?&export=download&id=1OJI0fsTW9V8nlZqXUL_oMNufl87QjnFQ"
+    }
+]

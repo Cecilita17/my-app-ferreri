@@ -1,0 +1,59 @@
+.sectionPizza{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 50px;
+    .reverse{
+        display: flex;
+        flex-direction: row-reverse !important;
+    }
+
+    .pizzaNro{
+        display: flex;
+        flex-flow: row nowrap ;
+                    
+        .pizzaDescript{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            padding-inline: 60px;
+            width: 372px;
+            height: 592px;
+            
+            .pizzasT{
+                color: #e8e8e8;
+                font-family: 'Cormorant Garamond', serif;
+                font-weight: 600;
+                font-size: 40px;
+                margin: 0px 0px 8px;
+            }
+            p{
+                color: #c6c6c6;
+                font-family: 'Jost', sans-serif;
+                margin: 0px 0px 16px;
+                &:first-of-type{
+                    color: #c6c6c6;
+                    font-size: 28px;
+                    font-family: 'Cormorant', serif;
+                }
+            }
+    
+            .rectangle{
+                text-transform: uppercase;
+                font-family: 'Jost', sans-serif;
+                font-size: 14px;
+                border: 2px solid white;
+                padding: 3px 15px;
+                margin: 0px 45px 0px 0px;
+                
+            }
+            .rectangle2{
+                text-transform: uppercase;
+                font-family: 'Jost', sans-serif;
+                font-size: 14px;
+                border: 2px solid white;
+                padding: 3px 19px;
+                margin: 0px 45px 0px 0px;
+            }
+        }
+    }
+}
