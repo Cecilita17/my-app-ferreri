@@ -2,7 +2,7 @@ import React from 'react';
 import Item from '../Item/Item';
 import './ItemList.scss';
 
-const ItemList = ({products, title, clase, description, priceRegular, priceMedium, url}) => {
+const ItemList = ({products}) => {
   return (
       <div className='sectionPizza'>
           {products.map((item, index) => (
