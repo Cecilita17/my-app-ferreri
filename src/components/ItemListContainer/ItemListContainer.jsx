@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ItemCount from "../ItemCount/ItemCount";
 import ItemList from "../ItemList/ItemList";
-import Item from "../Item/Item";
 import Data from "../../stock.json";
 
 const ItemListContainer = (props) => {

@@ -1,5 +1,6 @@
 [
     {
+        "id":1,
         "title": "Mushrooms",
         "clase": "pizzaNro",
         "description": "Tomato sauce, mushrooms, sausage and olives",
@@ -8,6 +9,7 @@
         "url": "https://drive.google.com/uc?&export=download&id=1T_tzxGckwKQxYzbBW_4-fu3wnu1MUOno"
     },
     {
+        "id":2,
         "title": "Mozzarella",
         "clase": "pizzaNro reverse",
         "description": "Tomato sauce, mozzarella cheese, oregano, basil",
@@ -16,6 +18,7 @@
         "url": "https://drive.google.com/uc?&export=download&id=1ohKgs0-3rkQ1icN4D9lxQNSphFEJiFwr"
     },
     {
+        "id":3,
         "title": "Veggie",
         "clase": "pizzaNro",
         "description": "Tomato sauce, broccoli, sliced tomato, mushrooms",
@@ -24,6 +27,7 @@
         "url":"https://drive.google.com/uc?&export=download&id=1e4CobY7cyC7cmVA65B-V88UJYV0XyaF3"
     },
     {
+        "id":4,
         "title": "Capricciosa",
         "clase": "pizzaNro reverse",
         "description": " Lorem ipsum dolor sit amet consectetur adipisicing elit",
