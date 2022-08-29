@@ -22,7 +22,7 @@ const ItemListContainer = (props) => {
 
   return (
     <div className={props.clase}>
-      <ItemList products={products} />
+      <ItemList products={products} onAdd={onAdd}/>
     </div>
   );
 };

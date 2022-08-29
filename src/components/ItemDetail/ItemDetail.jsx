@@ -4,9 +4,9 @@ const ItemDetail = ({ item }) => {
   const {title, priceRegular, url } = item;
   return (
     <div>
-      <h1>{title}</h1>
+      <h1>titulo:{title}</h1>
       <img src={url} alt="" />
-      <h3>{priceRegular}</h3>
+      <h3>price:{priceRegular}</h3>
     </div>
   )
 }

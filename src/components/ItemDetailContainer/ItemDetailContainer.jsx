@@ -4,7 +4,7 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 import Data from "../../stock.json";
 
 const ItemDetailContainer = () => {
-  const { id } = useParams();
+  const { idd } = useParams();
   const [item, setItem] = useState({});
 
   useEffect(() => {
@@ -13,8 +13,8 @@ const ItemDetailContainer = () => {
         resolve(Data);
       }, 2000);
     });
-    promise.then(setItem(Data.find((el) => el.id == id)));
-  }, [id]);
+    promise.then(setItem(Data.find((el) => el.id === idd)));
+  }, [idd]);
 
   return <>{Object.keys(item).length && <ItemDetail item={item} />}</>;
 };
