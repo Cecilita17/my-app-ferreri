@@ -1,12 +1,12 @@
 import React from 'react'
 
-const ItemDetail = ({ itemdetail }) => {
-  const { id, title, clase, description, priceRegular, priceMedium, url } = itemdetail;
+const ItemDetail = ({ item }) => {
+  const {title, priceRegular, url } = item;
   return (
     <div>
       <h1>{title}</h1>
       <img src={url} alt="" />
-      <h3>{price}</h3>
+      <h3>{priceRegular}</h3>
     </div>
   )
 }

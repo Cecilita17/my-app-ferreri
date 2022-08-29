@@ -65,7 +65,7 @@ function Navbar() {
       <nav>
         <ul>
           {navbarItem.map((item, index) => (
-            <li key={index}> <a href=""> {item.name} <i className={item.icon}></i></a></li>
+            <li key={index}> <a href="#"> {item.name} <i className={item.icon}></i></a></li>
           ))}
         </ul>
       </nav>

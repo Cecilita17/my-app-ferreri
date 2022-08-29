@@ -6,13 +6,14 @@ const ItemListContainer = (props) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    new Promise((resolve, reject) => {
+    const task = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(Data);
       }, 2000);
-    })
-      .then((res) => res.json)
-      .then(setProducts(Data));
+    });
+    task.then((task) => {
+      setProducts(task);
+    });
   }, []);
 
   function onAdd(count) {
@@ -20,9 +21,8 @@ const ItemListContainer = (props) => {
   }
 
   return (
-    <div className={props.clase} >
-      <ItemList products={products}/>
-
+    <div className={props.clase}>
+      <ItemList products={products} />
     </div>
   );
 };
