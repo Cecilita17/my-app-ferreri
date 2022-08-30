@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ItemList from "../ItemList/ItemList";
 import Data from "../../stock.json";
+import '../ItemListContainer/ItemListContainer.scss'
 
 const ItemListContainer = (props) => {
   const [products, setProducts] = useState([]);
@@ -16,13 +17,11 @@ const ItemListContainer = (props) => {
     });
   }, []);
 
-  function onAdd(count) {
-    console.log("soy onAdd y el valor del contador es:", count);
-  }
+  
 
   return (
     <div className={props.clase}>
-      <ItemList products={products} onAdd={onAdd}/>
+      <ItemList products={products}/>
     </div>
   );
 };

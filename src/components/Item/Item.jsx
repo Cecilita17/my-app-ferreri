@@ -1,6 +1,5 @@
 import React from "react";
 import "../Item/Item.scss";
-import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
 
 const Item = ({
@@ -10,16 +9,14 @@ const Item = ({
   description,
   priceRegular,
   priceMedium,
-  url,
-  onAdd,
+  url
 }) => {
   return (
     <div className={clase}>
-      <Link to={`/item/${id}`}>
-        <div className="imgPizza animation">
-          <img src={url} alt="first pizza" />
-        </div>
-      </Link>
+      <div className="imgPizza animation">
+        <img src={url} alt="first pizza" />
+      </div>
+
       <div className="pizzaDescript animationLetra">
         <h4 className="pizzasT"> {title} </h4>
         <p> {description} </p>
@@ -29,7 +26,9 @@ const Item = ({
         <p>
           <span className="rectangle2">Medium size</span> {priceMedium}
         </p>
-        <ItemCount stock={7} initial={1} onAdd={onAdd} />
+        <Link to={`/item/${id}`}>
+          <p>View more</p>
+        </Link>
       </div>
     </div>
   );

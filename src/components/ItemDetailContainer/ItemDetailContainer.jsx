@@ -4,19 +4,21 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 import Data from "../../stock.json";
 
 const ItemDetailContainer = () => {
-  const { idd } = useParams();
+  const { id } = useParams();
   const [item, setItem] = useState({});
 
   useEffect(() => {
     const promise = new Promise((resolve) => {
       setTimeout(() => {
-        resolve(Data);
+        resolve(Data.find((el) => el.id == id));
       }, 2000);
     });
-    promise.then(setItem(Data.find((el) => el.id === idd)));
-  }, [idd]);
+    promise.then((data) => {
+      setItem(data);
+    });
+  }, [id]);
 
-  return <>{Object.keys(item).length && <ItemDetail item={item} />}</>;
+  return <>{<ItemDetail item={item} />}</>;
 };
 
 export default ItemDetailContainer;

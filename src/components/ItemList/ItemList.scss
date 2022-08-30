@@ -1,7 +1,7 @@
 .sectionPizza{
     display: flex;
     flex-flow: column nowrap;
-    margin-top: 50px;
+        
     .reverse{
         display: flex;
         flex-direction: row-reverse !important;

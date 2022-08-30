@@ -4,6 +4,9 @@ import "./ItemCount.scss";
 const ItemCount = ({ stock, initial, onAdd }) => {
   const [count, setCount] = useState(initial);
 
+  function onAdd(count) {
+    console.log("soy onAdd y el valor del contador es:", count);
+  }
   const add = () => {
     count > initial && setCount(count - 1);
   };

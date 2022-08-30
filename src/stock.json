@@ -2,7 +2,7 @@
     {
         "id":1,
         "title": "Mushrooms",
-        "clase": "pizzaNro",
+        "clase": "pizzaNro clase",
         "description": "Tomato sauce, mushrooms, sausage and olives",
         "priceRegular": "$30",
         "priceMedium":"$36",
@@ -11,7 +11,7 @@
     {
         "id":2,
         "title": "Mozzarella",
-        "clase": "pizzaNro reverse",
+        "clase": "pizzaNro reverse clase",
         "description": "Tomato sauce, mozzarella cheese, oregano, basil",
         "priceRegular": "$31",
         "priceMedium":"$36",
@@ -20,7 +20,7 @@
     {
         "id":3,
         "title": "Veggie",
-        "clase": "pizzaNro",
+        "clase": "pizzaNro clase",
         "description": "Tomato sauce, broccoli, sliced tomato, mushrooms",
         "priceRegular": "$29",
         "priceMedium":"$33",
@@ -29,7 +29,7 @@
     {
         "id":4,
         "title": "Capricciosa",
-        "clase": "pizzaNro reverse",
+        "clase": "pizzaNro reverse clase",
         "description": " Lorem ipsum dolor sit amet consectetur adipisicing elit",
         "priceRegular": "$32",
         "priceMedium":"$38",
