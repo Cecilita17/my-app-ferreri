@@ -1,0 +1,11 @@
+.dropBtn {
+  color: white !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  border: none !important;
+  font-family: "Jost", sans-serif !important;
+  text-transform: uppercase !important;
+  .dropItem {
+    text-transform: lowercase;
+  }
+}
